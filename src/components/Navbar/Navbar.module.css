@@ -1,0 +1,51 @@
+.navbar {
+  background-color: #090c18;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.logo {
+  color: rgb(34 211 238);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navLink {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: rgb(34 211 238);
+  transition: width 0.3s ease;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
