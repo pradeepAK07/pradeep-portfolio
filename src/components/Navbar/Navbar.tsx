@@ -1,20 +1,26 @@
 import styles from "./Navbar.module.css";
 import { NAV_LINKS } from "../../constant";
-import { NavLink } from "../../index.styles";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>Portfolio</div>
-      <div className={styles.navLinks}>
-        {NAV_LINKS.map((link) => (
-          <NavLink key={link.name}>
-            <Link className={styles.navLink} to={link.href}>
-              {link.name}
+    <nav className="z-10 fixed w-full h-20 px-12! backdrop-blur-md border-b-[0.5px] border-[#2a2a2a]/90 mx-auto flex items-center justify-center">
+      <div className="w-6xl flex items-center justify-between">
+        <p className="jetBrains text-2xl">{"{YN}"}</p>
+        <div className="flex gap-8 items-center">
+          {NAV_LINKS.map((link, i) => (
+            <Link
+              key={i}
+              to={link.href}
+              className="font-label-mono text-label-mono text-muted dark:text-muted uppercase hover:text-accent dark:hover:text-accent transition-colors duration-200"
+            >
+              <p className={`${styles.navLink} jetBrains`}>{link.name}</p>
             </Link>
-          </NavLink>
-        ))}
+          ))}
+        </div>
+        <button className="jetBrains cursor-pointer px-6! py-2! bg-[rgb(232,160,69)] text-black font-medium">
+          Get in Touch
+        </button>
       </div>
     </nav>
   );

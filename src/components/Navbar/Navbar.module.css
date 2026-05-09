@@ -26,11 +26,12 @@
 }
 
 .navLink {
-  color: inherit;
+  color: #5a5a5a;
   text-decoration: none;
   position: relative;
   display: inline-block;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .navLink::after {
@@ -39,7 +40,7 @@
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: rgb(34 211 238);
+  background: #e39c43;
   transition: width 0.3s ease;
   left: 50%;
   transform: translateX(-50%);
@@ -48,4 +49,8 @@
 
 .navLink:hover::after {
   width: 100%;
+}
+
+.navLink:hover {
+  color: #e39c43;
 }
