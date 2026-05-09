@@ -10,8 +10,6 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -39,4 +37,106 @@ body {
 
 .dmSans {
   font-family: "DM Sans", serif !important;
+}
+
+@theme {
+  /* COLORS */
+  --color-tertiary-fixed: #e6e1df;
+  --color-tertiary: #cac6c3;
+  --color-accent-dim: #b87a30;
+  --color-on-secondary-container: #ffeddd;
+  --color-surface: #161616;
+  --color-primary-fixed-dim: #c9c6c5;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-muted: #5a5a5a;
+  --color-secondary-container: #9b6000;
+  --color-surface-container-highest: #353434;
+  --color-inverse-on-surface: #313030;
+  --color-on-tertiary: #32302f;
+  --color-surface-container-high: #2b2a2a;
+  --color-accent: #e8a045;
+  --color-body: #c8c8c8;
+  --color-tertiary-container: #0e0d0c;
+  --color-on-secondary-fixed: #2b1700;
+  --color-surface-bright: #3a3939;
+  --color-inverse-primary: #5f5e5e;
+  --color-secondary-fixed: #ffddb9;
+  --color-heading: #f0ede6;
+  --color-on-tertiary-container: #7d7a78;
+  --color-primary-fixed: #e5e2e1;
+  --color-on-primary-container: #7c7a7a;
+  --color-background: #141313;
+  --color-secondary-fixed-dim: #ffb964;
+  --color-on-tertiary-fixed: #1d1b1a;
+  --color-bg: #0d0d0d;
+  --color-surface-dim: #141313;
+  --color-primary-container: #0d0d0d;
+  --color-on-tertiary-fixed-variant: #484645;
+  --color-on-secondary: #482a00;
+  --color-primary: #c9c6c5;
+  --color-on-primary-fixed-variant: #474646;
+  --color-error-container: #93000a;
+  --color-on-surface-variant: #c4c7c7;
+  --color-outline: #8e9192;
+  --color-surface-tint: #c9c6c5;
+  --color-on-primary-fixed: #1c1b1b;
+  --color-on-surface: #e5e2e1;
+  --color-surface-container-low: #1c1b1b;
+  --color-success: #4ade80;
+  --color-secondary: #ffb964;
+  --color-on-secondary-fixed-variant: #663e00;
+  --color-tertiary-fixed-dim: #cac6c3;
+  --color-error: #ffb4ab;
+  --color-on-primary: #313030;
+  --color-inverse-surface: #e5e2e1;
+  --color-outline-variant: #444748;
+  --color-on-error: #690005;
+  --color-on-background: #e5e2e1;
+  --color-on-error-container: #ffdad6;
+  --color-surface-variant: #353434;
+  --color-border: #2a2a2a;
+  --color-surface-container: #201f1f;
+
+  /* BORDER RADIUS */
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* SPACING */
+  --spacing-margin-x: 3rem;
+  --spacing-container-max: 72rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-section-py: 6rem;
+
+  /* FONTS */
+  --font-section-title: "DM Serif Display", serif;
+  --font-card-title: "DM Serif Display", serif;
+  --font-body-main: "DM Sans", sans-serif;
+  --font-label-mono: "JetBrains Mono", monospace;
+  --font-hero-name: "Playfair Display", serif;
+
+  /* FONT SIZES */
+  --text-section-title: 48px;
+  --text-card-title: 24px;
+  --text-body-main: 18px;
+  --text-label-mono: 14px;
+  --text-hero-name: 128px;
+
+  /* LINE HEIGHTS */
+  --leading-section-title: 1.2;
+  --leading-card-title: 1.2;
+  --leading-body-main: 1.6;
+  --leading-label-mono: 1.5;
+  --leading-hero-name: 1.1;
+
+  /* LETTER SPACING */
+  --tracking-label-mono: 0.1em;
+
+  /* FONT WEIGHTS */
+  --font-weight-section-title: 400;
+  --font-weight-card-title: 400;
+  --font-weight-body-main: 400;
+  --font-weight-label-mono: 500;
+  --font-weight-hero-name: 700;
 }
