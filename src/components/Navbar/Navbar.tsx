@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="z-10 fixed w-full h-20 px-12! backdrop-blur-md border-b-[0.5px] border-[#2a2a2a]/90 mx-auto flex items-center justify-center">
+    <nav className="z-50 fixed w-full h-20 px-12! backdrop-blur-md border-b-[0.5px] border-border/90 mx-auto flex items-center justify-center">
       <div className="w-6xl flex items-center justify-between">
         <p className="jetBrains text-2xl">{"{YN}"}</p>
         <div className="flex gap-8 items-center">

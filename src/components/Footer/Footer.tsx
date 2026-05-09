@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="w-full flex items-center justify-center">
+    <footer className="w-full flex items-center justify-center border-t-[0.5px] border-border/90">
       <div className="w-6xl flex flex-col md:flex-row justify-between items-center mx-auto p-6! gap-4">
         <div className="jetBrains text-muted dark:text-muted text-center md:text-left text-[rgb(90,90,90)] ">
           © 2026 ALL RIGHTS RESERVED.
