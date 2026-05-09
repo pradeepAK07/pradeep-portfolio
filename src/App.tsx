@@ -1,12 +1,20 @@
-import { Route, Routes } from "react-router-dom";
-import { ExperiencePage, HomePage, ROUTE_CONFIG } from "./Helpers/Routes";
+import { Navigate, Route, Routes } from "react-router-dom";
+import {
+  ExperiencePage,
+  HomePage,
+  ROUTE_CONFIG,
+  SkillsPage,
+} from "./Helpers/Routes";
 
 function App() {
   return (
     <Routes>
-      <Route path={ROUTE_CONFIG.ROOT_ROUTE} element={<HomePage />} />
+      <Route
+        path={ROUTE_CONFIG.ROOT_ROUTE}
+        element={<Navigate to={ROUTE_CONFIG.HOME_ROUTE} />}
+      />
       <Route path={ROUTE_CONFIG.HOME_ROUTE} element={<HomePage />} />
-      <Route path={ROUTE_CONFIG.SKILLS_ROUTE} element={<HomePage />} />
+      <Route path={ROUTE_CONFIG.SKILLS_ROUTE} element={<SkillsPage />} />
       <Route
         path={ROUTE_CONFIG.EXPERIENCE_ROUTE}
         element={<ExperiencePage />}

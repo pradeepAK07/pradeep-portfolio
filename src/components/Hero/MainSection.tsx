@@ -13,7 +13,7 @@ function MainSection() {
         <button className="jetBrains uppercase bg-[#e39c43] px-10! py-4! text-bg text-black  tracking-wider hover:bg-[#B87A30] transition-all duration-200 cursor-pointer">
           View Projects
         </button>
-        <button className="jetBrains cursor-pointer border border-border border-[#84807a] px-10! py-4! uppercase tracking-wider hover:border-[#E8A045] transition-all duration-200">
+        <button className="jetBrains cursor-pointer border border-border border-[#84807a] px-10 py-4 uppercase tracking-wider hover:border-[#E8A045] transition-all duration-200">
           Read resume
         </button>
       </div>

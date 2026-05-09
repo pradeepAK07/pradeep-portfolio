@@ -2,6 +2,7 @@ import { lazy } from "react";
 
 const HomePage = lazy(() => import("../pages/Home/Home"));
 const ExperiencePage = lazy(() => import("../pages/Experience/Experience"));
+const SkillsPage = lazy(() => import("../pages/Skills/Skills"));
 
 const ROUTE_CONFIG = {
   ROOT_ROUTE: "/",
@@ -11,4 +12,4 @@ const ROUTE_CONFIG = {
   CONTACT_ROUTE: "/contact",
 } as const;
 
-export { HomePage, ExperiencePage, ROUTE_CONFIG };
+export { HomePage, ExperiencePage, ROUTE_CONFIG, SkillsPage };
